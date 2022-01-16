@@ -1,0 +1,94 @@
+#row {
+    padding: 0rem 1rem;
+    vertical-align: top;
+    width: 475px;
+    margin: auto;
+}
+.divcentered {
+    position: absolute; top: 400px; left: 400px; 
+}
+
+
+.navlink {
+    color: white;
+  }
+
+#submit {
+    width: 60px;
+    height: 35px;
+    border: none;
+    margin: 500;
+    padding: 5000;
+    display: inline-block;
+}
+
+#subcardyesheader {
+    color: black !important;
+    background-color: lightgreen;
+    height: 10px;
+ }
+
+ #subcardnoheader {
+    color: black;
+    background-color: pink;
+    height: 10px;
+ }
+
+ #psub {
+    line-height: 15px;  
+    margin: 0px;
+    color: gray
+  }
+
+  #pbold {
+    font-weight: bold;
+    color: rgb(39, 38, 38)
+  }
+
+#creator {
+    width: 370px;
+    height: 35px;
+    border: none;
+    background-color: green;
+}
+
+#resolver {
+    width: 370px;
+    height: 35px;
+    border: none;
+    background-color: green;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+#yesreverter {
+    width: 370px;
+    height: 35px;
+    border: none;
+    background-color: lightgreen;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+#noreverter {
+    width: 370px;
+    height: 35px;
+    border: none;
+    background-color: pink;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+#betinputs {
+    width: 150px;
+    height: 35px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#betinputs {
+    text-align: justify;
+}
