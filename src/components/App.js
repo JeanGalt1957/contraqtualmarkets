@@ -5,6 +5,7 @@ import CreateBet from '../abis/CreateBet.json';
 import Navbar from './Navbar';
 import Main from './Main';
 import About from './About';
+import Verified from './Verified';
 import { Routes ,Route } from 'react-router-dom';
 
 class App extends Component {
@@ -175,10 +176,10 @@ class App extends Component {
                 revertno={this.revertno}
                 setoracle={this.setoracle}
                 resolve={this.resolve}
-
               />
           }/>
           <Route exact path='/about' element={<About/>} />
+          <Route exact path='/verified' element={<Verified/>} />
         </Routes>
       </div>
     );
