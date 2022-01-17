@@ -35,7 +35,7 @@ const Block = styled.div`
 const About = () => (
     <Block>
     <h1>About Contraqtual</h1>
-      <p>Contraqtual is yes / no smart contract interface built on the AVAX blockchain network.</p>
+      <p>Contraqtual is a yes / no smart contract interface built on the AVAX blockchain network.</p>
       <p>Users can buy votes on either 'yes' or 'no'. When to contract outcome is finalized, the 
         amount of votes owned as a percentage of the total votes on a given side entitles the owner 
         to their proportional share of all wagers on the losing side.</p>
@@ -97,7 +97,7 @@ const Future  = () => (
     <h1>Future</h1>
   <p>This site will continue to add new contracts, features, and UX. We look forward to an exicting
     marketplace and will happyily make markets for user-suggested contracts. Please reach out with
-    questions, comments, bugs, and suggestions to: 
+    questions, comments, bugs, and suggestions to: admin@contraqtual.com
   </p>
   </Block>
 )
