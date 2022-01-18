@@ -651,7 +651,7 @@ class Main extends Component {
                           this.props.betyes(betIndex, betyesAmount)
                         }}>
                         <div id="betinputs">
-                          Yes Votes: {(bet._yesvotes).toString()}
+                          Yes Votes: {(bet._yesvotes - bet._genesisvotes).toString()}
                         </div>
                           <div className="form-group mr-sm-2">
                             <input
@@ -676,7 +676,7 @@ class Main extends Component {
                           this.props.betno(betIndex, betnoAmount)
                         }}>
                         <div id="betinputs">
-                          No Votes: {bet._novotes.toString()}
+                          No Votes: {(bet._novotes - (100 - bet._genesisvotes)).toString()}
                         </div>
                           <div className="form-group mr-sm-2">
                             <input
