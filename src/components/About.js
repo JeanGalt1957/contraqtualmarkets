@@ -47,6 +47,15 @@ const About = () => (
     <p> Contraqtual contracts are paid out instantly, directly to whatever account you purchased votes
       from. Every single thing you see here, aside from static text like this, is hosted on the AVAX
       blockchain. </p>
+    <p id="pbold"><u>IMPORTANT:</u></p>
+    <p id="pbold">1) All contract <u>outcomes are determined by the administrator</u>. We do not use chainlink 
+    or other oracle services to preserve cost and flexibility in the types of markets made.</p>
+    <p id="pbold">2) A <u>fee of 5.0%</u> is charged on winning distrbutions</p>
+    <p ><strong>3) Do not place bets after an outcome has occured in real life or your bet will be
+    reverted! The <u>adminstrator can revert malicious bets </u></strong> Check out the 'revertyes' and
+     'revertno' functions on our <a href="https://snowtrace.io/address/0xB068Bd570247Bd1FFBabbD566C4EC44345245Ad9">
+       <strong>verified smart contract</strong></a>. These prevent malicious bettors from "flooding" the 
+       contract to take a bigger ownership of the losing side when an outcome is already known!</p>
 
     </Block>
 )
@@ -54,11 +63,11 @@ const About = () => (
 const Pricing  = () => (
     <Block>
       <h1>Votes, odds, and pricing</h1>
-      <h4>Genesis pricing of votes</h4>
+      <h4><u>Genesis pricing of votes</u></h4>
       <p>When a contract is first published, the combined price of one yes vote plus one no vote 
         is 0.02 AVAX (~$1.00 USD as of January 2022). This is known as the Genesis Price, and it 
         can only be set at contract creation based on the initial odds. Initial odds of 50/50 
-        yes/no create a Genesis Price of 0.01 AVAX for yes and 0.01 AVAX for no means the Genesis 
+        yes/no create a Genesis Price of 0.01 AVAX for yes and 0.01 AVAX for, and means the Genesis 
         Odds were 50/50 yes/no. If the initial odds were 66/33 yes/no, the Genesis Prices would 
         be 0.0133 AVAX for yes and 0.0066 for no.
       <p></p>
@@ -71,12 +80,12 @@ const Pricing  = () => (
       </p>
 
       </p>
-      <h4>Dynamic pricing of votes</h4>
+      <h4><u>Dynamic pricing of votes</u></h4>
       <p>The price per vote changes dynamically as votes are purchased. Live prices are listed 
         directly on the contract form. Every time votes are purchased, the price is reset to: 
         Price Per Vote = Genesis Price * Odds. 
       </p>
-      <h4>Implied odds</h4>
+      <h4><u>Implied odds</u></h4>
       <p>Odds on a contract are simply the percentage of yes and no votes out of the total votes 
         outstanding on either side. E.g., if there are 120 yes votes and 80 no votes, the implied 
         odds are 60% yes and 40% no</p>
@@ -88,8 +97,6 @@ const Pricing  = () => (
         price per vote on the other side decreases, incentivizing new bettors to consider an
         opposing view and 
       </p>
-
-
     </Block>
 )
 const Future  = () => (
@@ -97,7 +104,7 @@ const Future  = () => (
     <h1>Future</h1>
   <p>This site will continue to add new contracts, features, and UX. We look forward to an exicting
     marketplace and will happyily make markets for user-suggested contracts. Please reach out with
-    questions, comments, bugs, and suggestions to: admin@contraqtual.com
+    questions, comments, bugs, and suggestions to: <strong>admin@contraqtual.com</strong>!
   </p>
   </Block>
 )

@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import Main from './Main';
 import About from './About';
 import Verified from './Verified';
+import Opensource from './Opensource';
 import { Routes ,Route } from 'react-router-dom';
 
 class App extends Component {
@@ -180,6 +181,7 @@ class App extends Component {
           }/>
           <Route exact path='/about' element={<About/>} />
           <Route exact path='/verified' element={<Verified/>} />
+          <Route exact path='/opensource' element={<Opensource/>} />
         </Routes>
       </div>
     );

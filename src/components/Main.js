@@ -436,6 +436,7 @@ class Main extends Component {
                             src={`data:image/png;base64,${new Identicon(test._player, 30).toString()}`}
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
+                          <small className="text-muted"> <strong> &nbsp; &nbsp; (you own this bet!) </strong></small>
                           </div>
                           <ul class="list-group list-group-flush"> 
                               <li class="list-group-item">
@@ -489,6 +490,7 @@ class Main extends Component {
                             src={`data:image/png;base64,${new Identicon(test._player, 30).toString()}`}
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
+                          <small className="text-muted"> <strong> &nbsp; &nbsp; (you own this bet!) </strong></small>
                           </div>
                           <ul class="list-group list-group-flush"> 
                               <li class="list-group-item">

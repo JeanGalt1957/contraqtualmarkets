@@ -42,6 +42,14 @@ class Navbar extends Component {
           </li>
         </ul>
         <ul className="navbar-nav px-3">
+          <li> <Link to="/opensource">
+            <small className='navlink'>
+            Contribute!
+            </small>
+            </Link>
+          </li>
+        </ul>
+        <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
             <small className="text-secondary">
             <small id="account">{this.props.account}</small>
