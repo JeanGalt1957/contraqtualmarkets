@@ -34,6 +34,14 @@ class Navbar extends Component {
           </li>
         </ul>
         <ul className="navbar-nav px-3">
+          <li> 
+            <small className='navlink'>
+            <href id="whitelink"> <a id = "whitelink" href="https://jeangalt1957.github.io/DUsocial/"> 
+            Chat! </a></href> 
+            </small>
+          </li>
+        </ul>
+        <ul className="navbar-nav px-3">
           <li> <Link to="/verified">
             <small className='navlink'>
             Verified contract
