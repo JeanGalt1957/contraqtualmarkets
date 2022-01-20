@@ -2,80 +2,39 @@ import React, { Component } from 'react';
 import Identicon from 'identicon.js';
 import {Link} from 'react-router-dom'
 
-class Navbar extends Component {
+import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Form, FormControl, Button } from 'react-bootstrap';
+
+class Menu extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <Link to="/">
-        <a
-          className="navbar-brand col-sm-3 col-md-2 mr-0"
-          href=""
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          Contraqtual
-        </a>
-        </Link>
-        <ul className="navbar-nav px-3">
-          <li> <Link to="/">
-            <small className='navlink'>
-            Home
-            </small>
-            </Link>
-          </li>
-        </ul>
-        <ul className="navbar-nav px-3">
-          <li> <Link to="/about">
-            <small className='navlink'>
-            About
-            </small>
-            </Link>
-          </li>
-        </ul>
-        <ul className="navbar-nav px-3">
-          <li> 
-            <small className='navlink'>
-            <href id="whitelink"> <a id = "whitelink" href="https://jeangalt1957.github.io/DUsocial/"> 
-            Chat! </a></href> 
-            </small>
-          </li>
-        </ul>
-        <ul className="navbar-nav px-3">
-          <li> <Link to="/verified">
-            <small className='navlink'>
-            Verified contract
-            </small>
-            </Link>
-          </li>
-        </ul>
-        <ul className="navbar-nav px-3">
-          <li> <Link to="/opensource">
-            <small className='navlink'>
-            Contribute!
-            </small>
-            </Link>
-          </li>
-        </ul>
-        <ul className="navbar-nav px-3">
-          <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
-            <small className="text-secondary">
-            <small id="account">{this.props.account}</small>
-            </small>
-            { this.props.account
-              ? <img
-                className='ml-2'
-                width='30'
-                height='30'
-                src={`data:image/png;base64,${new Identicon(this.props.account, 30).toString()}`}
-              />
-              : <span></span>
-            }
-          </li>
-        </ul>
-      </nav>
+		<Navbar bg='dark' variant="dark" expand='lg' fixed="top">
+		<Navbar.Brand href="/">Contraqtual</Navbar.Brand>
+		<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+		<Navbar.Collapse id="basic-navbar-nav">
+		<Nav className='mx-auto'>
+			<Nav.Link id="aboutNav" className="small px-5" href="/about">About</Nav.Link>
+			<Nav.Link id="chatNav" className="small px-5" href="https://jeangalt1957.github.io/DUsocial/" target="_blank">Chat!</Nav.Link>
+			<Nav.Link id="verifiedNav" className="small px-5" href="/verified">Verified Contract</Nav.Link>
+			<Nav.Link id="contributeNav" className="small px-5" href="/opensource">Contribute!</Nav.Link>
+		</Nav>
+		<Nav className="ml-auto">
+			<span className="text-secondary small">{this.props.account}{ this.props.account
+			  ? <img
+				className='ml-2'
+				width='30'
+				height='30'
+				src={`data:image/png;base64,${new Identicon(this.props.account, 30).toString()}`}
+			  />
+			  : <span></span>
+			}</span>
+			
+
+		</Nav>
+		</Navbar.Collapse>
+		</Navbar>
     );
   }
 }
 
-export default Navbar;
+export default Menu;
