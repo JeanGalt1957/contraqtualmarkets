@@ -152,7 +152,7 @@ class Main extends Component {
                         if(test._betindex.toNumber() == bet._id.toNumber()
                         && test._isyes == true)  {
                         return (
-                        <div class="card m-1" height="20" >
+                        <div className="card m-1" height="20" >
                           <div className= "card-header d-flex align-items-center" id = "subcardyesheader">
                           <img
                             className='mr-1'
@@ -162,8 +162,8 @@ class Main extends Component {
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
                           </div>
-                          <ul class="list-group list-group-flush"> 
-                              <li class="list-group-item">
+                          <ul className="list-group list-group-flush"> 
+                              <li className="list-group-item">
                               <p id="psub">
                                   <small>Votes purchased: {test._playeryesvotes.toString()}
                                   </small>
@@ -222,7 +222,7 @@ class Main extends Component {
                       if(test._betindex.toNumber() == bet._id.toNumber()
                       && test._isno == true) {
                         return (
-                          <div class="card m-1" height="20" >
+                          <div className="card m-1" height="20" >
                           <div className= "card-header d-flex align-items-center" id = "subcardnoheader">
                           <img
                             className='mr-1'
@@ -232,8 +232,8 @@ class Main extends Component {
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
                           </div>
-                          <ul class="list-group list-group-flush"> 
-                              <li class="list-group-item">
+                          <ul className="list-group list-group-flush"> 
+                              <li className="list-group-item">
                               <p id="psub">
                                   <small>Votes purchased: {test._playernovotes.toString()}
                                   </small>
@@ -427,7 +427,7 @@ class Main extends Component {
                         && test._isyes == true)  {
                         i++
                         return (
-                        <div class="card m-1" height="20" >
+                        <div className="card m-1" height="20" key={key}>
                           <div className= "card-header d-flex align-items-center" id = "subcardyesheader">
                           <img
                             className='mr-1'
@@ -438,8 +438,8 @@ class Main extends Component {
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
                           <small className="text-muted"> <strong> &nbsp; &nbsp; (you own this bet!) </strong></small>
                           </div>
-                          <ul class="list-group list-group-flush"> 
-                              <li class="list-group-item">
+                          <ul className="list-group list-group-flush"> 
+                              <li className="list-group-item">
                               Your yes votes on this contract:
                               <p id="psub">
                                   <small>Votes purchased: {test._playeryesvotes.toString()}
@@ -481,7 +481,7 @@ class Main extends Component {
                       if(test._player == this.props.account && test._betindex.toNumber() == bet._id.toNumber()
                       && test._isno == true) {
                         return (
-                          <div class="card m-1" height="20" >
+                          <div className="card m-1" height="20" >
                           <div className= "card-header d-flex align-items-center" id = "subcardnoheader">
                           <img
                             className='mr-1'
@@ -492,8 +492,8 @@ class Main extends Component {
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
                           <small className="text-muted"> <strong> &nbsp; &nbsp; (you own this bet!) </strong></small>
                           </div>
-                          <ul class="list-group list-group-flush"> 
-                              <li class="list-group-item">
+                          <ul className="list-group list-group-flush"> 
+                              <li className="list-group-item">
                               <p id="psub">
                                   <small>Votes purchased: {test._playernovotes.toString()}
                                   </small>
@@ -538,7 +538,7 @@ class Main extends Component {
                         && test._isyes == true 
                         && test._specificindex.toNumber() >= bet._yesplayers.toNumber() - 2 )  {
                         return (
-                        <div class="card m-1" height="20" >
+                        <div className="card m-1" height="20" key={key}>
                           <div className= "card-header d-flex align-items-center" id = "subcardyesheader">
                           <img
                             className='mr-1'
@@ -548,8 +548,8 @@ class Main extends Component {
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
                           </div>
-                          <ul class="list-group list-group-flush"> 
-                              <li class="list-group-item">
+                          <ul className="list-group list-group-flush"> 
+                              <li className="list-group-item">
                               <p id="psub">
                                   <small>Votes purchased: {test._playeryesvotes.toString()}
                                   </small>
@@ -593,7 +593,7 @@ class Main extends Component {
                       if(test._betindex.toNumber() == bet._id.toNumber()
                       && test._isno == true && test._specificindex.toNumber() >= bet._noplayers.toNumber() - 2) {
                         return (
-                          <div class="card m-1" height="20" >
+                          <div className="card m-1" height="20" key={key}>
                           <div className= "card-header d-flex align-items-center" id = "subcardnoheader">
                           <img
                             className='mr-1'
@@ -603,8 +603,8 @@ class Main extends Component {
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
                           </div>
-                          <ul class="list-group list-group-flush"> 
-                              <li class="list-group-item">
+                          <ul className="list-group list-group-flush"> 
+                              <li className="list-group-item">
                               <p id="psub">
                                   <small>Votes purchased: {test._playernovotes.toString()}
                                   </small>

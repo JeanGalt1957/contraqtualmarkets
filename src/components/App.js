@@ -164,7 +164,10 @@ class App extends Component {
         <Routes>
         <Route exact path='/' element=
            { this.state.loading
-            ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+            ? <div id="loader" className="text-center mt-5"><i><p>...Loading on-chain data from Avalanche...</p>
+             <p>...Make sure you have <a href="https://metamask.io/download/">metamask</a> downloaded...</p>
+             <p>...and make sure its configured for Avalanche<a href="https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche">(here's how to set up if needed)...</a></p>
+             </i></div>
             : <Main
                 account={this.state.account}
                 bets={this.state.bets}

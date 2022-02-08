@@ -37,7 +37,7 @@ class Navbar extends Component {
           <li> 
             <small className='navlink'>
             <href id="whitelink"> <a id = "whitelink" href="https://jeangalt1957.github.io/DUsocial/"> 
-            Chat! </a></href> 
+            Message Board </a></href> 
             </small>
           </li>
         </ul>
@@ -52,7 +52,7 @@ class Navbar extends Component {
         <ul className="navbar-nav px-3">
           <li> <Link to="/opensource">
             <small className='navlink'>
-            Contribute!
+            GitHub
             </small>
             </Link>
           </li>

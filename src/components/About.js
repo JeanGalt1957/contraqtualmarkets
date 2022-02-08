@@ -103,7 +103,7 @@ const Future  = () => (
   <Block>
     <h1>Future</h1>
   <p>This site will continue to add new contracts, features, and UX. We look forward to an exicting
-    marketplace and will happyily make markets for user-suggested contracts. Please reach out with
+    marketplace and will happily make markets for user-suggested contracts. Please reach out with
     questions, comments, bugs, and suggestions to: <strong>admin@contraqtual.com</strong>!
   </p>
   </Block>
