@@ -1,7 +1,7 @@
 {
   "main.css": "/contraqtualmarkets/static/css/main.d5aec2ec.chunk.css",
-  "main.js": "/contraqtualmarkets/static/js/main.1fd51097.chunk.js",
-  "main.js.map": "/contraqtualmarkets/static/js/main.1fd51097.chunk.js.map",
+  "main.js": "/contraqtualmarkets/static/js/main.70387c2e.chunk.js",
+  "main.js.map": "/contraqtualmarkets/static/js/main.70387c2e.chunk.js.map",
   "static/css/1.b81fae55.chunk.css": "/contraqtualmarkets/static/css/1.b81fae55.chunk.css",
   "static/js/1.9553c095.chunk.js": "/contraqtualmarkets/static/js/1.9553c095.chunk.js",
   "static/js/1.9553c095.chunk.js.map": "/contraqtualmarkets/static/js/1.9553c095.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.d5aec2ec.chunk.css.map": "/contraqtualmarkets/static/css/main.d5aec2ec.chunk.css.map",
   "static/css/1.b81fae55.chunk.css.map": "/contraqtualmarkets/static/css/1.b81fae55.chunk.css.map",
   "index.html": "/contraqtualmarkets/index.html",
-  "precache-manifest.6d960b52518533a1802f33177cd28510.js": "/contraqtualmarkets/precache-manifest.6d960b52518533a1802f33177cd28510.js",
+  "precache-manifest.d0b9c9b328481dba16e623c3601f969b.js": "/contraqtualmarkets/precache-manifest.d0b9c9b328481dba16e623c3601f969b.js",
   "service-worker.js": "/contraqtualmarkets/service-worker.js"
 }
