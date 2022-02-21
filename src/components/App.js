@@ -4,10 +4,14 @@ import './App.css';
 import CreateBet from '../abis/CreateBet.json';
 import Navbar from './Navbar';
 import Main from './Main';
+import Main_User from'./Main_User';
 import About from './About';
 import Verified from './Verified';
 import Opensource from './Opensource';
 import { Routes ,Route } from 'react-router-dom';
+import detectEthereumProvider from '@metamask/detect-provider';
+
+
 
 class App extends Component {
   async componentWillMount() {
@@ -158,6 +162,10 @@ class App extends Component {
   }
 
   render() {
+    
+    let adminaddress;
+    adminaddress = '0x12984A0D426F61318c24b180CA37F902410BBB34'; // revise to actual admin!
+    if(this.state.account == adminaddress) {
     return (
       <div>
         <Navbar account={this.state.account} />
@@ -188,6 +196,39 @@ class App extends Component {
         </Routes>
       </div>
     );
+  }
+  else {
+    return (
+      <div>
+        <Navbar account={this.state.account} />
+        <Routes>
+        <Route exact path='/' element=
+           { this.state.loading
+            ? <div id="loader" className="text-center mt-5"><i><p>...Loading on-chain data from Avalanche...</p>
+             <p>...Make sure you have <a href="https://metamask.io/download/">metamask</a> downloaded...</p>
+             <p>...and make sure its configured for Avalanche<a href="https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche">(here's how to set up if needed)...</a></p>
+             </i></div>
+            : <Main_User
+                account={this.state.account}
+                bets={this.state.bets}
+                stats={this.state.stats}
+                tests={this.state.tests}
+                createyesnobet={this.createyesnobet}
+                betyes={this.betyes}
+                betno={this.betno}
+                revertyes={this.revertyes}
+                revertno={this.revertno}
+                setoracle={this.setoracle}
+                resolve={this.resolve}
+              />
+          }/>
+          <Route exact path='/about' element={<About/>} />
+          <Route exact path='/verified' element={<Verified/>} />
+          <Route exact path='/opensource' element={<Opensource/>} />
+        </Routes>
+      </div>
+    );
+  }
     
   }
 }
