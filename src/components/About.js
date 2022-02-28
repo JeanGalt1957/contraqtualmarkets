@@ -48,14 +48,14 @@ const About = () => (
       from. Every single thing you see here, aside from static text like this, is hosted on the AVAX
       blockchain. Check the 'Paid out' page for some recently resolved contracts </p>
     <p id="pbold"><u>IMPORTANT:</u></p>
-    <p id="pbold">1) All contract <u>outcomes are determined by the administrator</u>. We do not use chainlink 
-    or other oracle services to preserve cost and flexibility in the types of markets made.</p>
+    <p id="pbold">1) All contract <u>outcomes are determined by the administrator</u>. We do not currently use chainlink 
+    or other oracle services.</p>
     <p id="pbold">2) A <u>fee of 5.0%</u> is charged on winning distrbutions</p>
     <p ><strong>3) Do not place bets after an outcome has occured in real life or your bet will be
-    reverted! The <u>adminstrator can revert malicious bets </u></strong> Check out the 'revertyes' and
+    reverted. The <u>adminstrator reserves the right to revert and refund malicious bets </u></strong> Check out the 'revertyes' and
      'revertno' functions on our <a href="https://snowtrace.io/address/0xB068Bd570247Bd1FFBabbD566C4EC44345245Ad9">
        <strong>verified smart contract</strong></a>. These prevent malicious bettors from "flooding" the 
-       contract to take a bigger ownership of the losing side when an outcome is already known!</p>
+       contract to take a bigger ownership of the losing side when an outcome is already known.</p>
 
     </Block>
 )
