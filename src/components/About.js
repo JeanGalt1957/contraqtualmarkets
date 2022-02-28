@@ -36,9 +36,8 @@ const About = () => (
     <Block>
     <h1>About Contraqtual</h1>
       <p>Contraqtual is a yes / no betting interface built on smart contracts. We run on the Avalanche network, and bets are paid in AVAX</p>
-      <p>You can buy votes on either 'Yes' or 'No' for each market, and when a contract outcome is finalized, the 
-        amount of votes you own on the winning as a percentage of that side's total votes entitles you 
-        to that same share of all the cash on the losing side.</p>
+      <p>You can buy votes on either 'Yes' or 'No' for each market. When a contract outcome is finalized, winners take all, and
+        the share of votes you own on the winning side entitles you to that same share of all the cash on the losing side.</p>
     <p>For example, imagine you own 10 out of 100 votes on the yes side. On the no side, $1,000 total
       has been bet by others voting on no. If your 
       prediction is correct you will win $100 (10%, i.e. 10/100 votes, of $1,000) plus whatever money you 
