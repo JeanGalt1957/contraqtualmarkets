@@ -65,7 +65,7 @@ class Main extends Component {
                         <p id="psub"> Pre-fee pay out: {(bet._yeswagers / 10 ** 18 + bet._nowagers / 10 ** 18).toFixed(4)} </p>
                       </li>
                     <li className="list-group-item">
-                    Winning yes votes!
+                    Winning "Yes" votes!
                     {this.props.tests.map((test,key) => {
                         if(test._betindex.toNumber() == bet._id.toNumber()
                         && test._isyes == true 
@@ -104,7 +104,7 @@ class Main extends Component {
                     }
                     </li>  
                     <li className="list-group-item">
-                    Winning no votes!
+                    Winning "No" votes!
                     {this.props.tests.map((test,key) => {  
                       if(test._betindex.toNumber() == bet._id.toNumber()
                       && test._isno == true && bet._outcome == 0) {
