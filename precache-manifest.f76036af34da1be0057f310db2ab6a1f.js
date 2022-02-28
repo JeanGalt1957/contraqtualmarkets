@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "26675b40edb3d98ea1a1",
+    "revision": "61d92bd7598e78f7b522",
     "url": "/contraqtualmarkets/static/css/main.d0117976.chunk.css"
   },
   {
-    "revision": "26675b40edb3d98ea1a1",
-    "url": "/contraqtualmarkets/static/js/main.26675b40.chunk.js"
+    "revision": "61d92bd7598e78f7b522",
+    "url": "/contraqtualmarkets/static/js/main.61d92bd7.chunk.js"
   },
   {
     "revision": "23a7bcfc9b40f1fc3616",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/contraqtualmarkets/static/js/runtime~main.0f176658.js"
   },
   {
-    "revision": "1fa562d9da26a13b41d5c671e6a62eaf",
+    "revision": "21561d2ede9f7b49b3ac7a7d4596401d",
     "url": "/contraqtualmarkets/index.html"
   }
 ];
