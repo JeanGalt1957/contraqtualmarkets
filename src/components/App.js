@@ -5,6 +5,7 @@ import CreateBet from '../abis/CreateBet.json';
 import Navbar from './Navbar';
 import Main from './Main';
 import Main_User from'./Main_User';
+import Main_Paid from'./Main_Paid';
 import About from './About';
 import Verified from './Verified';
 import Opensource from './Opensource';
@@ -190,6 +191,26 @@ class App extends Component {
                 resolve={this.resolve}
               />
           }/>
+          <Route exact path='/Paid_out' element=
+           { this.state.loading
+            ? <div id="loader" className="text-center mt-5"><i><p>...Loading on-chain data from Avalanche...</p>
+             <p>...Make sure you have <a href="https://metamask.io/download/">metamask</a> downloaded...</p>
+             <p>...and make sure its configured for Avalanche<a href="https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche">(here's how to set up if needed)...</a></p>
+             </i></div>
+            : <Main_Paid
+                account={this.state.account}
+                bets={this.state.bets}
+                stats={this.state.stats}
+                tests={this.state.tests}
+                createyesnobet={this.createyesnobet}
+                betyes={this.betyes}
+                betno={this.betno}
+                revertyes={this.revertyes}
+                revertno={this.revertno}
+                setoracle={this.setoracle}
+                resolve={this.resolve}
+              />
+          }/>
           <Route exact path='/about' element={<About/>} />
           <Route exact path='/verified' element={<Verified/>} />
           <Route exact path='/opensource' element={<Opensource/>} />
@@ -209,6 +230,26 @@ class App extends Component {
              <p>...and make sure its configured for Avalanche<a href="https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche">(here's how to set up if needed)...</a></p>
              </i></div>
             : <Main_User
+                account={this.state.account}
+                bets={this.state.bets}
+                stats={this.state.stats}
+                tests={this.state.tests}
+                createyesnobet={this.createyesnobet}
+                betyes={this.betyes}
+                betno={this.betno}
+                revertyes={this.revertyes}
+                revertno={this.revertno}
+                setoracle={this.setoracle}
+                resolve={this.resolve}
+              />
+          }/>
+          <Route exact path='/Paid_out' element=
+           { this.state.loading
+            ? <div id="loader" className="text-center mt-5"><i><p>...Loading on-chain data from Avalanche...</p>
+             <p>...Make sure you have <a href="https://metamask.io/download/">metamask</a> downloaded...</p>
+             <p>...and make sure its configured for Avalanche<a href="https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche">(here's how to set up if needed)...</a></p>
+             </i></div>
+            : <Main_Paid
                 account={this.state.account}
                 bets={this.state.bets}
                 stats={this.state.stats}

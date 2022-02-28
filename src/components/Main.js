@@ -155,6 +155,7 @@ class Main extends Component {
                             src={`data:image/png;base64,${new Identicon(test._player, 30).toString()}`}
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
+                          <small className="text-muted">{test._player.toString()}</small>
                           </div>
                           <ul className="list-group list-group-flush"> 
                               <li className="list-group-item">
@@ -225,6 +226,7 @@ class Main extends Component {
                             src={`data:image/png;base64,${new Identicon(test._player, 30).toString()}`}
                           />
                           <small className="text-muted">wager ID: {test._specificindex.toString()}</small>
+                          <small className="text-muted">{test._player.toString()}</small>
                           </div>
                           <ul className="list-group list-group-flush"> 
                               <li className="list-group-item">

@@ -20,7 +20,15 @@ class Navbar extends Component {
         <ul className="navbar-nav px-3">
           <li> <Link to="/">
             <small className='navlink'>
-            Home
+            Open bets
+            </small>
+            </Link>
+          </li>
+        </ul>
+        <ul className="navbar-nav px-3">
+          <li> <Link to="/Paid_out">
+            <small className='navlink'>
+            Paid out
             </small>
             </Link>
           </li>
