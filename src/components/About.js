@@ -35,7 +35,7 @@ const Block = styled.div`
 const About = () => (
     <Block>
     <h1>About Contraqtual</h1>
-      <p>Contraqtual is a yes / no betting interface built on the AVAX blockchain smart contracts.</p>
+      <p>Contraqtual is a yes / no betting interface built on smart contracts. We run on the Avalanche network, and bets are paid in AVAX</p>
       <p>You can buy votes on either 'Yes' or 'No' for each market, and when a contract outcome is finalized, the 
         amount of votes you own on the winning as a percentage of that side's total votes entitles you 
         to that same share of all the cash on the losing side.</p>
