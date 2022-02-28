@@ -35,18 +35,18 @@ const Block = styled.div`
 const About = () => (
     <Block>
     <h1>About Contraqtual</h1>
-      <p>Contraqtual is a yes / no smart contract interface built on the AVAX blockchain network.</p>
-      <p>Users can buy votes on either 'yes' or 'no'. When to contract outcome is finalized, the 
-        amount of votes owned as a percentage of the total votes on a given side entitles the owner 
-        to their proportional share of all wagers on the losing side.</p>
+      <p>Contraqtual is a yes / no betting interface built on the AVAX blockchain smart contracts.</p>
+      <p>You can buy votes on either 'Yes' or 'No' for each market, and when a contract outcome is finalized, the 
+        amount of votes you own on the winning as a percentage of that side's total votes entitles you 
+        to that same share of all the cash on the losing side.</p>
     <p>For example, imagine you own 10 out of 100 votes on the yes side. On the no side, $1,000 total
-      has been spent by various other players betting on no (i.e., purchasing no votes). If your 
-      prediction is correct you will win $100 (10%, i.e. 10/100, of $1,000) plus whatever money you 
+      has been bet by others voting on no. If your 
+      prediction is correct you will win $100 (10%, i.e. 10/100 votes, of $1,000) plus whatever money you 
       laid to purchase your votes. If you paid $10 / vote, your account would receive $200 at closing
        of the contract (your $100 wager, plus your share of the winnings)</p>
     <p> Contraqtual contracts are paid out instantly, directly to whatever account you purchased votes
       from. Every single thing you see here, aside from static text like this, is hosted on the AVAX
-      blockchain. </p>
+      blockchain. Check the 'Paid out' page for some recently resolved contracts </p>
     <p id="pbold"><u>IMPORTANT:</u></p>
     <p id="pbold">1) All contract <u>outcomes are determined by the administrator</u>. We do not use chainlink 
     or other oracle services to preserve cost and flexibility in the types of markets made.</p>
